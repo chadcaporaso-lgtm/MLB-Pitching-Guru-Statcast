@@ -6,3 +6,4 @@ xgboost
 lightgbm
 pybaseball
 requests
+Pillow==12.3.0

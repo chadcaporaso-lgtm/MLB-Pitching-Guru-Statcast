@@ -17,3 +17,7 @@ An end-to-end quantitative MLB pitching analytics and betting model pipeline pow
 | **+4% (Optimal)** | **515** | **52.23%** | **$12,875.00** | **+$1,778.39** | **+13.81%** | **+0.46%** |
 | +6% | 354 | 53.11% | $8,850.00 | +$1,583.80 | +17.90% | +0.42% |
 | **+8% (Peak ROI)** | **249** | **53.41%** | **$6,225.00** | **+$1,362.90** | **+21.89%** | **+0.50%** |
+## Developer Notes
+* **Automated Reviews:** This repository uses CodeRabbit AI for real-time security scans and pull request validations.
+* **Security Scans:** Code checks run automatically on every open pull request to catch vulnerabilities before merging.
+* 

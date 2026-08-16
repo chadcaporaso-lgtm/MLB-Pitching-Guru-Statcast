@@ -85,3 +85,40 @@ def simulate_sgp_copula(team_runs: float, opp_starter_k_line: float, rho: float 
         "hit_rate": round(hit_rate, 3),
         "fair_odds": f"{'+' if fair_odds > 0 else ''}{fair_odds}"
     }
+
+
+def simulate_game_totals(away_runs: float, home_runs: float, total_line: float = 8.5, n_sims: int = 20000) -> dict:
+    """
+    Simulates full game combined runs distribution using Poisson Monte Carlo
+    and evaluates Over/Under hit rates and fair zero-vig lines.
+    """
+    sim_a = np.random.poisson(away_runs, n_sims)
+    sim_h = np.random.poisson(home_runs, n_sims)
+    sim_total = sim_a + sim_h
+
+    # Exclude exact pushes for integer lines to compute true two-way probabilities
+    if total_line % 1 == 0:
+        non_pushes = sim_total[sim_total != total_line]
+        over_prob = np.mean(non_pushes > total_line)
+        push_prob = np.mean(sim_total == total_line)
+    else:
+        over_prob = np.mean(sim_total > total_line)
+        push_prob = 0.0
+
+    under_prob = 1.0 - over_prob - push_prob
+
+    def to_american(prob):
+        if prob <= 0.001: return "+9999"
+        if prob >= 0.999: return "-9999"
+        odds = int(-100 * (prob / (1 - prob))) if prob >= 0.5 else int(100 * ((1 - prob) / prob))
+        return f"{'+' if odds > 0 else ''}{odds}"
+
+    return {
+        "projected_total": round(away_runs + home_runs, 2),
+        "total_line": total_line,
+        "over_prob": round(over_prob, 3),
+        "under_prob": round(under_prob, 3),
+        "push_prob": round(push_prob, 3),
+        "fair_over_odds": to_american(over_prob),
+        "fair_under_odds": to_american(under_prob)
+    }

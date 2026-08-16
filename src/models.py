@@ -126,16 +126,17 @@ def simulate_game_totals(away_runs: float, home_runs: float, total_line: float =
 
 def simulate_nrfi_yrfi(away_runs: float, home_runs: float, opp_away_era: float = 4.25, opp_home_era: float = 4.25) -> dict:
     """
-    Simulates NRFI / YRFI using Negative Binomial overdispersion (alpha = 0.65)
-    to accurately capture empirical MLB scoreless half-inning clustering (~72.5% base).
+    Calibrated NRFI / YRFI model using Negative Binomial run clustering (alpha = 0.65)
+    and empirical 1st-inning starter run expectancy (0.55x baseline per half).
     """
     alpha = 0.65
-    order_factor = 1.10
+    starter_1st_inning_scale = 0.55
 
-    lambda_away = (away_runs / 9.0) * order_factor
-    lambda_home = (home_runs / 9.0) * order_factor
+    # Expected runs per half-inning in the 1st
+    lambda_away = (away_runs / 9.0) * starter_1st_inning_scale
+    lambda_home = (home_runs / 9.0) * starter_1st_inning_scale
 
-    # Negative Binomial P(X = 0) = (1 + alpha * lambda)^(-1 / alpha)
+    # P(Scoreless Half) = (1 + alpha * lambda)^(-1 / alpha)
     prob_away_0 = (1.0 + alpha * lambda_away) ** (-1.0 / alpha)
     prob_home_0 = (1.0 + alpha * lambda_home) ** (-1.0 / alpha)
 

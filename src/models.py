@@ -1,5 +1,5 @@
 # ==============================================================================
-# MLB QUANTITATIVE MODELS: MONEYLINE, TOTALS & GAUSSIAN COPULA SGP
+# MLB QUANTITATIVE MODELS: MONEYLINE, TOTALS, RUN LINE & GAUSSIAN COPULA SGP
 # ==============================================================================
 import numpy as np
 import pandas as pd
@@ -8,13 +8,11 @@ from scipy.stats import poisson, norm
 LEAGUE_AVG_RUNS = 4.45
 
 def calculate_expected_runs(off_rating: float, opp_pitcher_era: float, is_home: bool = False) -> float:
-    """Calculates expected run baseline adjusted for pitching and park/home advantage."""
     pitcher_factor = opp_pitcher_era / 4.25
     hfa = 1.04 if is_home else 1.00
     return round(LEAGUE_AVG_RUNS * off_rating * pitcher_factor * hfa, 2)
 
 def simulate_moneyline(away_runs: float, home_runs: float, n_sims: int = 10000) -> dict:
-    """Runs Poisson Monte Carlo score simulations for fair win probability."""
     sim_a = np.random.poisson(away_runs, n_sims)
     sim_h = np.random.poisson(home_runs, n_sims)
     
@@ -34,33 +32,11 @@ def simulate_moneyline(away_runs: float, home_runs: float, n_sims: int = 10000) 
         "fair_away_ml": f"{'+' if fair_away_ml > 0 else ''}{fair_away_ml}"
     }
 
-def simulate_sgp_copula(team_runs: float, opp_starter_k_line: float, rho: float = -0.32, n_sims: int = 10000) -> dict:
-    """Evaluates joint probability of correlated SGP legs using Gaussian Copula."""
-    mean = [0, 0]
-    cov = [[1.0, rho], [rho, 1.0]]
-    bivariate = np.random.multivariate_normal(mean, cov, n_sims)
-    
-    sim_r = poisson.ppf(norm.cdf(bivariate[:, 0]), team_runs)
-    sim_k = poisson.ppf(norm.cdf(bivariate[:, 1]), opp_starter_k_line)
-    
-    hit_rate = np.mean((sim_r > 4.5) & (sim_k < opp_starter_k_line))
-    fair_odds = int((1.0 / hit_rate - 1.0) * 100) if hit_rate < 0.5 else int(-100 / (hit_rate / (1 - hit_rate)))
-    
-    return {
-        "hit_rate": round(hit_rate, 3),
-        "fair_odds": f"{'+' if fair_odds > 0 else ''}{fair_odds}"
-    }
-
-
 def simulate_run_line(away_runs: float, home_runs: float, n_sims: int = 15000) -> dict:
-    """
-    Simulates MLB Run Line (+1.5 / -1.5) outcomes using discrete bivariate Poisson
-    with bottom-of-9th home lead adjustment.
-    """
     sim_a = np.random.poisson(away_runs, n_sims)
     sim_h = np.random.poisson(home_runs, n_sims)
     
-    # Resolve ties into extra innings (50/50 single-run margin split)
+    # Extra innings tiebreaker resolution
     tie_indices = np.where(sim_a == sim_h)[0]
     for idx in tie_indices:
         if np.random.rand() > 0.5:
@@ -68,16 +44,11 @@ def simulate_run_line(away_runs: float, home_runs: float, n_sims: int = 15000) -
         else:
             sim_a[idx] += 1
 
-    # Margin: Home - Away
     diff = sim_h - sim_a
 
-    # Home covers -1.5 (diff >= 2)
-    # Away covers +1.5 (diff <= 1)
     home_minus_1_5_prob = np.mean(diff >= 2)
     away_plus_1_5_prob = 1.0 - home_minus_1_5_prob
 
-    # Away covers -1.5 (diff <= -2)
-    # Home covers +1.5 (diff >= -1)
     away_minus_1_5_prob = np.mean(diff <= -2)
     home_plus_1_5_prob = 1.0 - away_minus_1_5_prob
 
@@ -97,4 +68,20 @@ def simulate_run_line(away_runs: float, home_runs: float, n_sims: int = 15000) -
         "home_plus_1_5_prob": round(home_plus_1_5_prob, 3),
         "fair_away_minus_1_5": to_american(away_minus_1_5_prob),
         "fair_home_plus_1_5": to_american(home_plus_1_5_prob)
+    }
+
+def simulate_sgp_copula(team_runs: float, opp_starter_k_line: float, rho: float = -0.32, n_sims: int = 10000) -> dict:
+    mean = [0, 0]
+    cov = [[1.0, rho], [rho, 1.0]]
+    bivariate = np.random.multivariate_normal(mean, cov, n_sims)
+    
+    sim_r = poisson.ppf(norm.cdf(bivariate[:, 0]), team_runs)
+    sim_k = poisson.ppf(norm.cdf(bivariate[:, 1]), opp_starter_k_line)
+    
+    hit_rate = np.mean((sim_r > 4.5) & (sim_k < opp_starter_k_line))
+    fair_odds = int((1.0 / hit_rate - 1.0) * 100) if hit_rate < 0.5 else int(-100 / (hit_rate / (1 - hit_rate)))
+    
+    return {
+        "hit_rate": round(hit_rate, 3),
+        "fair_odds": f"{'+' if fair_odds > 0 else ''}{fair_odds}"
     }

@@ -122,3 +122,34 @@ def simulate_game_totals(away_runs: float, home_runs: float, total_line: float =
         "fair_over_odds": to_american(over_prob),
         "fair_under_odds": to_american(under_prob)
     }
+
+
+def simulate_nrfi_yrfi(away_runs: float, home_runs: float, opp_away_era: float = 4.25, opp_home_era: float = 4.25) -> dict:
+    """
+    Simulates No Run First Inning (NRFI) and Yes Run First Inning (YRFI)
+    probabilities using top-of-the-order adjusted Poisson expectancy.
+    """
+    order_factor = 1.18
+
+    lambda_away = (away_runs / 9.0) * order_factor * (opp_home_era / 4.25)
+    lambda_home = (home_runs / 9.0) * order_factor * (opp_away_era / 4.25)
+
+    prob_away_0 = np.exp(-lambda_away)
+    prob_home_0 = np.exp(-lambda_home)
+
+    nrfi_prob = prob_away_0 * prob_home_0
+    yrfi_prob = 1.0 - nrfi_prob
+
+    def to_american(prob):
+        if prob <= 0.001: return "+9999"
+        if prob >= 0.999: return "-9999"
+        odds = int(-100 * (prob / (1 - prob))) if prob >= 0.5 else int(100 * ((1 - prob) / prob))
+        return f"{'+' if odds > 0 else ''}{odds}"
+
+    return {
+        "nrfi_prob": round(nrfi_prob, 3),
+        "yrfi_prob": round(yrfi_prob, 3),
+        "fair_nrfi_odds": to_american(nrfi_prob),
+        "fair_yrfi_odds": to_american(yrfi_prob),
+        "exp_first_inning_runs": round(lambda_away + lambda_home, 2)
+    }

@@ -127,13 +127,16 @@ def simulate_game_totals(away_runs: float, home_runs: float, total_line: float =
 def simulate_nrfi_yrfi(away_runs: float, home_runs: float, opp_away_era: float = 4.25, opp_home_era: float = 4.25) -> dict:
     """
     Simulates No Run First Inning (NRFI) and Yes Run First Inning (YRFI)
-    probabilities using top-of-the-order adjusted Poisson expectancy.
+    probabilities using calibrated 1st-inning top-of-the-order run expectancy.
     """
-    order_factor = 1.18
+    # Standard top-of-the-order scoring rate (1-2-3 hitters generate ~12% more run value than avg inning)
+    order_factor = 1.12
 
-    lambda_away = (away_runs / 9.0) * order_factor * (opp_home_era / 4.25)
-    lambda_home = (home_runs / 9.0) * order_factor * (opp_away_era / 4.25)
+    # Expected runs in 1st inning per half
+    lambda_away = (away_runs / 9.0) * order_factor
+    lambda_home = (home_runs / 9.0) * order_factor
 
+    # Zero Poisson outcome P(X=0) = e^(-lambda)
     prob_away_0 = np.exp(-lambda_away)
     prob_home_0 = np.exp(-lambda_home)
 

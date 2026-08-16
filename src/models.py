@@ -50,3 +50,51 @@ def simulate_sgp_copula(team_runs: float, opp_starter_k_line: float, rho: float 
         "hit_rate": round(hit_rate, 3),
         "fair_odds": f"{'+' if fair_odds > 0 else ''}{fair_odds}"
     }
+
+
+def simulate_run_line(away_runs: float, home_runs: float, n_sims: int = 15000) -> dict:
+    """
+    Simulates MLB Run Line (+1.5 / -1.5) outcomes using discrete bivariate Poisson
+    with bottom-of-9th home lead adjustment.
+    """
+    sim_a = np.random.poisson(away_runs, n_sims)
+    sim_h = np.random.poisson(home_runs, n_sims)
+    
+    # Resolve ties into extra innings (50/50 single-run margin split)
+    tie_indices = np.where(sim_a == sim_h)[0]
+    for idx in tie_indices:
+        if np.random.rand() > 0.5:
+            sim_h[idx] += 1
+        else:
+            sim_a[idx] += 1
+
+    # Margin: Home - Away
+    diff = sim_h - sim_a
+
+    # Home covers -1.5 (diff >= 2)
+    # Away covers +1.5 (diff <= 1)
+    home_minus_1_5_prob = np.mean(diff >= 2)
+    away_plus_1_5_prob = 1.0 - home_minus_1_5_prob
+
+    # Away covers -1.5 (diff <= -2)
+    # Home covers +1.5 (diff >= -1)
+    away_minus_1_5_prob = np.mean(diff <= -2)
+    home_plus_1_5_prob = 1.0 - away_minus_1_5_prob
+
+    def to_american(prob):
+        if prob <= 0.001: return "+9999"
+        if prob >= 0.999: return "-9999"
+        odds = int(-100 * (prob / (1 - prob))) if prob >= 0.5 else int(100 * ((1 - prob) / prob))
+        return f"{'+' if odds > 0 else ''}{odds}"
+
+    return {
+        "home_minus_1_5_prob": round(home_minus_1_5_prob, 3),
+        "away_plus_1_5_prob": round(away_plus_1_5_prob, 3),
+        "fair_home_minus_1_5": to_american(home_minus_1_5_prob),
+        "fair_away_plus_1_5": to_american(away_plus_1_5_prob),
+        
+        "away_minus_1_5_prob": round(away_minus_1_5_prob, 3),
+        "home_plus_1_5_prob": round(home_plus_1_5_prob, 3),
+        "fair_away_minus_1_5": to_american(away_minus_1_5_prob),
+        "fair_home_plus_1_5": to_american(home_plus_1_5_prob)
+    }

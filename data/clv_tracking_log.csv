@@ -84,7 +84,6 @@ timestamp,game_id,market_type,selection,placed_odds_american,placed_odds_decimal
 2026-08-22T12:06:24.739840+00:00,2026-08-22_SF_BOS,Run Line,San Francisco Giants +1.5,-127,1.7874,0.649,1.5,,,,PENDING,0.0,68°F | 5.8mph (+6.2%)
 2026-08-22T12:06:24.739840+00:00,2026-08-22_SF_BOS,Game Total,SF @ BOS Over 8.0,-112,1.8929,0.555,0.75,,,,PENDING,0.0,68°F | 5.8mph (+6.2%)
 2026-08-22T12:06:24.739840+00:00,2026-08-22_CHC_SEA,Game Total,CHC @ SEA Over 7.5,-120,1.8333,0.621,1.5,,,,PENDING,0.0,Dome / Controlled
-2026-08-22T12:06:24.739840+00:00,2026-08-22_DET_KC,Moneyline,Detroit Tigers,-2,51.0,0.385,1.5,,,,PENDING,0.0,69°F | 3.2mph (+3.7%)
 2026-08-22T12:06:24.739840+00:00,2026-08-22_PIT_LAD,Moneyline,Pittsburgh Pirates,230,3.3,0.384,1.5,,,,PENDING,0.0,69°F | 0.6mph (+0.5%)
 2026-08-22T12:06:24.739840+00:00,2026-08-22_PIT_LAD,Run Line,Pittsburgh Pirates +1.5,-107,1.9346,0.656,1.5,,,,PENDING,0.0,69°F | 0.6mph (+0.5%)
 2026-08-22T12:06:24.739840+00:00,2026-08-22_PIT_LAD,Game Total,PIT @ LAD Over 7.5,-113,1.885,0.626,1.5,,,,PENDING,0.0,69°F | 0.6mph (+0.5%)

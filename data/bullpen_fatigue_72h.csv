@@ -1,0 +1,31 @@
+team_id,team_name,pitches_last_72h,reliever_appearances,high_leverage_pitches,fatigue_penalty_mult
+114,Cleveland Guardians,304,14,214,0.1095
+138,St. Louis Cardinals,288,15,145,0.1015
+140,Texas Rangers,257,10,190,0.086
+133,Athletics,248,10,188,0.0815
+116,Detroit Tigers,243,12,113,0.079
+141,Toronto Blue Jays,236,11,144,0.0755
+134,Pittsburgh Pirates,214,10,131,0.0645
+136,Seattle Mariners,212,12,131,0.0635
+137,San Francisco Giants,204,9,123,0.0595
+139,Tampa Bay Rays,200,10,131,0.0575
+146,Miami Marlins,185,11,92,0.05
+118,Kansas City Royals,182,10,107,0.0485
+158,Milwaukee Brewers,165,10,61,0.04
+110,Baltimore Orioles,165,13,45,0.04
+111,Boston Red Sox,159,7,93,0.037
+121,New York Mets,155,9,84,0.035
+113,Cincinnati Reds,154,9,69,0.0345
+142,Minnesota Twins,153,9,62,0.034
+120,Washington Nationals,152,6,120,0.0335
+119,Los Angeles Dodgers,151,12,21,0.033
+145,Chicago White Sox,149,8,89,0.032
+115,Colorado Rockies,148,9,76,0.0315
+112,Chicago Cubs,147,9,69,0.031
+135,San Diego Padres,133,8,65,0.024
+109,Arizona Diamondbacks,126,8,24,0.0205
+117,Houston Astros,126,9,28,0.0205
+144,Atlanta Braves,119,6,65,0.017
+108,Los Angeles Angels,97,6,53,0.006
+147,New York Yankees,86,5,48,0.0005
+143,Philadelphia Phillies,50,4,20,0.0

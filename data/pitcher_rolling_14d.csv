@@ -1,0 +1,31 @@
+pitcher_id,player_name,team,rolling_ip,rolling_era,rolling_k_pct,rolling_bb_pct,rolling_gb_pct,rolling_xwoba
+683627,Anthony Molina,San Francisco Giants,11.3,3.97,0.147,0.021,0.385,0.1364
+804267,Zac Thornton,New York Mets,16.0,3.38,0.238,0.015,0.533,0.139
+665871,Javier Assad,Chicago Cubs,8.0,2.25,0.119,0.03,0.526,0.1509
+687473,Ryan Gusto,Miami Marlins,14.0,0.64,0.136,0.102,0.594,0.1818
+527048,Martín Pérez,Atlanta Braves,14.7,3.68,0.179,0.114,0.562,0.1819
+554430,Zack Wheeler,Philadelphia Phillies,15.0,6.6,0.27,0.19,0.48,0.1995
+664285,Framber Valdez,Detroit Tigers,17.7,5.09,0.135,0.094,0.707,0.1865
+800048,Parker Messick,Cleveland Guardians,18.7,1.45,0.242,0.038,0.472,0.1428
+579328,Yusei Kikuchi,Los Angeles Angels,14.0,4.5,0.187,0.051,0.448,0.1494
+677952,Braxton Ashcraft,Pittsburgh Pirates,19.0,1.89,0.113,0.025,0.622,0.1555
+669160,Dustin May,Milwaukee Brewers,6.7,14.85,0.179,0.179,0.467,0.1998
+671096,Andrew Abbott,Cincinnati Reds,15.3,7.63,0.202,0.093,0.455,0.1649
+543243,Sonny Gray,Boston Red Sox,18.0,3.0,0.238,0.053,0.471,0.1485
+605135,Chris Bassitt,Baltimore Orioles,18.0,4.5,0.198,0.053,0.571,0.1585
+656876,Drew Rasmussen,Tampa Bay Rays,17.0,4.24,0.224,0.056,0.5,0.1528
+594798,Jacob deGrom,Texas Rangers,16.7,4.32,0.286,0.086,0.448,0.1561
+453286,Max Scherzer,Toronto Blue Jays,16.0,5.06,0.223,0.134,0.394,0.1744
+607625,Seth Lugo,Kansas City Royals,14.7,9.2,0.162,0.049,0.438,0.1494
+671737,Taj Bradley,Minnesota Twins,18.7,2.89,0.344,0.089,0.37,0.1464
+641743,Anthony Kay,Chicago White Sox,15.3,6.46,0.233,0.078,0.562,0.1654
+694297,Brandon Pfaadt,Arizona Diamondbacks,18.3,5.4,0.156,0.039,0.429,0.1455
+814490,Ethan Pecko,Houston Astros,13.0,6.23,0.165,0.165,0.321,0.1853
+607074,Carlos Rodón,New York Yankees,12.7,2.84,0.207,0.094,0.241,0.149
+592662,Robbie Ray,San Diego Padres,17.3,2.08,0.179,0.11,0.389,0.1681
+669461,Matthew Liberatore,St. Louis Cardinals,15.7,8.04,0.38,0.046,0.348,0.125
+690279,Mason Adams,Colorado Rockies,9.0,3.0,0.265,0.132,0.333,0.1658
+676917,Cade Cavalli,Washington Nationals,16.0,1.12,0.387,0.074,0.5,0.1501
+607192,Tyler Glasnow,Los Angeles Dodgers,13.0,3.46,0.275,0.018,0.435,0.1301
+605488,Jeffrey Springs,Athletics,15.0,7.8,0.159,0.095,0.441,0.1676
+669923,George Kirby,Seattle Mariners,16.0,6.75,0.208,0.074,0.406,0.1537

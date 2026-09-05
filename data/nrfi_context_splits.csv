@@ -1,31 +1,16 @@
-pitcher_id,player_name,team,tto1_k_pct,rolling_xwoba,catcher_framing_bonus,starter_nrfi_factor
-683627,Anthony Molina,San Francisco Giants,0.159,0.1364,0.01,0.6659
-804267,Zac Thornton,New York Mets,0.257,0.139,0.01,0.6757
-665871,Javier Assad,Chicago Cubs,0.129,0.1509,0.01,0.6629
-687473,Ryan Gusto,Miami Marlins,0.147,0.1818,0.01,0.6647
-527048,Martín Pérez,Atlanta Braves,0.193,0.182,0.005,0.6643
-554430,Zack Wheeler,Philadelphia Phillies,0.292,0.1994,0.024,0.6932
-664285,Framber Valdez,Detroit Tigers,0.146,0.1863,0.01,0.6646
-800048,Parker Messick,Cleveland Guardians,0.261,0.1427,0.01,0.6761
-579328,Yusei Kikuchi,Los Angeles Angels,0.202,0.1494,0.01,0.6702
-677952,Braxton Ashcraft,Pittsburgh Pirates,0.122,0.1555,0.01,0.6622
-669160,Dustin May,Milwaukee Brewers,0.193,0.1999,0.01,0.6693
-671096,Andrew Abbott,Cincinnati Reds,0.218,0.1649,0.01,0.6718
-543243,Sonny Gray,Boston Red Sox,0.257,0.1486,0.01,0.6757
-605135,Chris Bassitt,Baltimore Orioles,0.214,0.1585,0.01,0.6714
-656876,Drew Rasmussen,Tampa Bay Rays,0.242,0.1528,0.01,0.6742
-594798,Jacob deGrom,Texas Rangers,0.309,0.1561,0.01,0.6809
-453286,Max Scherzer,Toronto Blue Jays,0.241,0.1744,0.01,0.6741
-607625,Seth Lugo,Kansas City Royals,0.175,0.1496,0.01,0.6675
-671737,Taj Bradley,Minnesota Twins,0.372,0.1463,0.01,0.6872
-641743,Anthony Kay,Chicago White Sox,0.252,0.1655,0.01,0.6752
-694297,Brandon Pfaadt,Arizona Diamondbacks,0.168,0.1456,0.01,0.6668
-814490,Ethan Pecko,Houston Astros,0.178,0.1853,0.01,0.6678
-607074,Carlos Rodón,New York Yankees,0.224,0.1489,0.01,0.6724
-592662,Robbie Ray,San Diego Padres,0.193,0.1681,0.01,0.6693
-669461,Matthew Liberatore,St. Louis Cardinals,0.41,0.1251,0.01,0.691
-690279,Mason Adams,Colorado Rockies,0.286,0.1656,0.01,0.6786
-676917,Cade Cavalli,Washington Nationals,0.418,0.1499,0.01,0.6918
-607192,Tyler Glasnow,Los Angeles Dodgers,0.297,0.1299,0.01,0.6797
-605488,Jeffrey Springs,Athletics,0.172,0.1675,0.01,0.6672
-669923,George Kirby,Seattle Mariners,0.225,0.1536,0.01,0.6725
+game_pk,venue_name,home_team,away_team,home_pitcher,away_pitcher,home_tto1_xwoba,away_tto1_xwoba,home_tto1_k_pct,away_tto1_k_pct,catcher_framing_delta,park_wind_suppression,true_nrfi_prob
+823577,Citi Field,New York Mets,San Francisco Giants,Zac Thornton,Anthony Molina,0.3376,0.2115,0.25,0.0,0.016,0.0,0.5987
+823823,loanDepot park,Miami Marlins,Chicago Cubs,Ryan Gusto,Javier Assad,0.2746,0.3191,0.333,0.0,0.016,0.0,0.5985
+823419,Citizens Bank Park,Philadelphia Phillies,Atlanta Braves,Zack Wheeler,Martín Pérez,0.3869,0.3557,0.348,0.125,0.042,-0.045,0.6238
+824389,Progressive Field,Cleveland Guardians,Detroit Tigers,Parker Messick,Framber Valdez,0.2352,0.3753,0.2,0.043,0.016,0.0,0.5872
+823335,PNC Park,Pittsburgh Pirates,Los Angeles Angels,Braxton Ashcraft,Yusei Kikuchi,0.2471,0.2941,0.294,0.25,0.016,0.0,0.6288
+824468,Great American Ball Park,Cincinnati Reds,Milwaukee Brewers,Andrew Abbott,Dustin May,0.4579,0.3671,0.095,0.227,0.016,0.0,0.5538
+824795,Oriole Park at Camden Yards,Baltimore Orioles,Boston Red Sox,Chris Bassitt,Sonny Gray,0.3816,0.2302,0.222,0.25,0.016,0.0,0.6079
+822850,Globe Life Field,Texas Rangers,Tampa Bay Rays,Jacob deGrom,Drew Rasmussen,0.3991,0.2209,0.269,0.167,0.016,0.0,0.6025
+824066,Kauffman Stadium,Kansas City Royals,Toronto Blue Jays,Seth Lugo,Max Scherzer,0.3627,0.315,0.125,0.261,0.016,0.0,0.5874
+824553,Rate Field,Chicago White Sox,Minnesota Twins,Anthony Kay,Taj Bradley,0.2106,0.3409,0.182,0.2,0.016,0.0,0.6112
+824145,Daikin Park,Houston Astros,Arizona Diamondbacks,Ethan Pecko,Brandon Pfaadt,0.4439,0.1883,0.143,0.316,0.016,0.0,0.6025
+823257,Petco Park,San Diego Padres,New York Yankees,Robbie Ray,Carlos Rodón,0.3711,0.3051,0.053,0.273,0.016,0.0,0.5822
+824310,Coors Field,Colorado Rockies,St. Louis Cardinals,Mason Adams,Matthew Liberatore,0.3165,0.3171,0.375,0.158,0.016,0.0,0.6094
+823904,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Washington Nationals,Tyler Glasnow,Cade Cavalli,0.2565,0.0904,0.1,0.412,0.016,0.0,0.6648
+823094,T-Mobile Park,Seattle Mariners,Athletics,George Kirby,Jeffrey Springs,0.3725,0.3264,0.154,0.214,0.016,0.0,0.5818

@@ -1,0 +1,9 @@
+game_pk,pitcher,team,opp_team,venue,csw_pct,lineup_mult,exp_ip,lambda_k,k_line,over_prob,under_prob,fair_over,fair_under
+823577,Zac Thornton,New York Mets,San Francisco Giants,Citi Field,21.3%,1.105,5.5,4.95,3.5,0.7002,0.2998,-234,+234
+823577,Zac Thornton,New York Mets,San Francisco Giants,Citi Field,21.3%,1.105,5.5,4.95,4.5,0.5343,0.4657,-115,+115
+823577,Zac Thornton,New York Mets,San Francisco Giants,Citi Field,21.3%,1.105,5.5,4.95,5.5,0.3757,0.6243,+166,-166
+823577,Zac Thornton,New York Mets,San Francisco Giants,Citi Field,21.3%,1.105,5.5,4.95,6.5,0.2446,0.7554,+309,-309
+823577,Anthony Molina,San Francisco Giants,New York Mets,Citi Field,28.3%,1.182,5.3,7.64,3.5,0.9278,0.0722,-1286,+1286
+823577,Anthony Molina,San Francisco Giants,New York Mets,Citi Field,28.3%,1.182,5.3,7.64,4.5,0.8519,0.1481,-575,+575
+823577,Anthony Molina,San Francisco Giants,New York Mets,Citi Field,28.3%,1.182,5.3,7.64,5.5,0.7459,0.2541,-294,+294
+823577,Anthony Molina,San Francisco Giants,New York Mets,Citi Field,28.3%,1.182,5.3,7.64,6.5,0.6193,0.3807,-163,+163

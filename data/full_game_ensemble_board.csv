@@ -1,0 +1,2 @@
+game_pk,matchup,venue,away_sp,home_sp,exp_away_runs,exp_home_runs,p_lgbm_home,p_mc_home,final_home_ml_prob,fair_home_ml,final_away_ml_prob,fair_away_ml,away_cover_p15,fair_away_p15,home_cover_m15,fair_home_m15,over_85_prob,fair_over_85
+823577,San Francisco Giants @ New York Mets,Citi Field,Anthony Molina,Zac Thornton,5.48,5.02,0.5016,0.4405,0.4832,+107,0.5168,-107,0.7372,-281,0.2628,+281,0.7559,-310

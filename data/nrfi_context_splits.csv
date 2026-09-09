@@ -1,0 +1,16 @@
+game_pk,venue_name,home_team,away_team,home_pitcher,away_pitcher,catcher_framing_delta,park_wind_suppression,true_nrfi_prob
+824226,Comerica Park,Detroit Tigers,Minnesota Twins,Keider Montero,Zebby Matthews,0.015,0.0,0.5
+824956,Sutter Health Park,Athletics,Toronto Blue Jays,Brady Basso,Braydon Fisher,0.015,0.0,0.5
+823172,Oracle Park,San Francisco Giants,St. Louis Cardinals,Blade Tidwell,Andre Pallante,0.015,0.0,0.5
+823251,Petco Park,San Diego Padres,Washington Nationals,Walker Buehler,Jackson Kent,0.015,0.0,0.5
+823090,T-Mobile Park,Seattle Mariners,Texas Rangers,Kade Anderson,Cody Bradford,0.015,0.0,0.5
+824791,Oriole Park at Camden Yards,Baltimore Orioles,Cleveland Guardians,Shane Baz,Foster Griffin,0.015,0.0,0.5
+823416,Citizens Bank Park,Philadelphia Phillies,Houston Astros,Cristopher Sánchez,Hunter Brown,0.015,0.0,0.5
+823818,loanDepot park,Miami Marlins,New York Mets,Janson Junk,Robert Stock,0.015,0.0,0.5
+824713,Fenway Park,Boston Red Sox,Los Angeles Angels,Jake Bennett,Ryan Johnson,0.015,0.0,0.5
+823497,Yankee Stadium,New York Yankees,Colorado Rockies,Will Warren,Tomoyuki Sugano,0.015,0.0,0.5
+824871,Truist Park,Atlanta Braves,Tampa Bay Rays,Reynaldo López,Griffin Jax,0.015,0.0,0.5
+824064,Kauffman Stadium,Kansas City Royals,Arizona Diamondbacks,Daniel Lynch IV,Zac Gallen,0.015,0.0,0.5
+824549,Rate Field,Chicago White Sox,Pittsburgh Pirates,Davis Martin,Lake Bachar,0.015,0.0,0.5
+823739,American Family Field,Milwaukee Brewers,Chicago Cubs,Logan Henderson,Kevin Gausman,0.015,0.0,0.5
+823900,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Cincinnati Reds,Yoshinobu Yamamoto,Rhett Lowder,0.015,0.0,0.5

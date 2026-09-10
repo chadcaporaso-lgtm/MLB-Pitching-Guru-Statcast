@@ -1,7 +1,7 @@
 timestamp,game_id,market_type,selection,placed_odds_american,placed_odds_decimal,model_win_prob,stake_units,closing_odds_american,closing_odds_decimal,clv_pct,result,profit_units,weather_desc,key,engine,book,market,odds,model_p,mkt_p,edge,stake,status
 2026-08-16T17:16:44.692187,2026-08-16_MIL_LAD,Moneyline,Milwaukee Brewers,163.0,2.63,0.471,0.75,,,,WIN,1.222,,,,,,,,,,,
-2026-09-09T19:30:00+00:00,2026-09-09_ARI_KC_ML,Moneyline,Kansas City Royals ML,102.0,2.02,0.636,0.75,,,,PENDING,0.0,Kauffman Stadium; Model 4 (+14.14% EV) vs FanDuel,,,,,,,,,,
-2026-09-09T19:30:00+00:00,2026-09-09_PIT_CWS_RL,Run Line,Pittsburgh Pirates +1.5,-175.0,1.57,0.73,0.75,,,,PENDING,0.0,Guaranteed Rate Field; Model 4 (+9.33% EV) vs FanDuel,,,,,,,,,,
-2026-09-09T19:30:00+00:00,2026-09-09_CHC_MIL_RL,Run Line,Milwaukee Brewers -1.5,168.0,2.68,0.465,0.75,,,,PENDING,0.0,American Family Field; Model 4 (+9.16% EV) vs FanDuel,,,,,,,,,,
-2026-09-09T19:30:00+00:00,2026-09-09_PIT_CWS_ML,Moneyline,Pittsburgh Pirates ML,115.0,2.15,0.525,0.75,,,,PENDING,0.0,Guaranteed Rate Field; Model 4 (+6.02% EV) vs BetMGM,,,,,,,,,,
-2026-09-09T19:30:00+00:00,2026-09-09_CHC_MIL_ML,Moneyline,Milwaukee Brewers ML,-130.0,1.77,0.606,0.75,,,,PENDING,0.0,American Family Field; Model 4 (+4.11% EV) vs FanDuel,,,,,,,,,,
+2026-09-09T19:30:00+00:00,2026-09-09_ARI_KC_ML,Moneyline,Kansas City Royals ML,102.0,2.02,0.636,0.75,,1.9493,3.63,WIN,0.765,Kauffman Stadium; Model 4 (+14.14% EV) vs FanDuel,,,,,,,,,,
+2026-09-09T19:30:00+00:00,2026-09-09_PIT_CWS_RL,Run Line,Pittsburgh Pirates +1.5,-175.0,1.57,0.73,0.75,,1.5151,3.62,WIN,0.428,Guaranteed Rate Field; Model 4 (+9.33% EV) vs FanDuel,,,,,,,,,,
+2026-09-09T19:30:00+00:00,2026-09-09_CHC_MIL_RL,Run Line,Milwaukee Brewers -1.5,168.0,2.68,0.465,0.75,,2.5862,3.63,WIN,1.26,American Family Field; Model 4 (+9.16% EV) vs FanDuel,,,,,,,,,,
+2026-09-09T19:30:00+00:00,2026-09-09_PIT_CWS_ML,Moneyline,Pittsburgh Pirates ML,115.0,2.15,0.525,0.75,,2.0747,3.63,WIN,0.862,Guaranteed Rate Field; Model 4 (+6.02% EV) vs BetMGM,,,,,,,,,,
+2026-09-09T19:30:00+00:00,2026-09-09_CHC_MIL_ML,Moneyline,Milwaukee Brewers ML,-130.0,1.77,0.606,0.75,,1.7081,3.62,WIN,0.578,American Family Field; Model 4 (+4.11% EV) vs FanDuel,,,,,,,,,,

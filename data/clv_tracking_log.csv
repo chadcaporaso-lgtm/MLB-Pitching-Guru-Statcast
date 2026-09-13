@@ -9,3 +9,15 @@ timestamp,game_id,market_type,selection,placed_odds_american,placed_odds_decimal
 2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_NRFI,NRFI,PIT @ CWS Under 0.5 1st Inning (NRFI),-130.0,1.7692,0.5852,2.99,,1.7,4.07,WIN,2.3,Logged from Pikkit; Model Edge: +2.00%
 2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_5.5,Strikeout Prop,Jared Jones Over 5.5 Ks,-163.0,1.6135,0.822,2.0,,1.53,5.46,WIN,1.227,Logged from Pikkit; Model Edge: +20.22%
 2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_6.5,Strikeout Prop,Jared Jones Over 6.5 Ks,133.0,2.33,0.715,2.0,,2.15,8.37,WIN,2.66,Logged from Pikkit; Model Edge: +28.58%
+2026-09-13T14:38:25+00:00,2026-09-13_ARI_LAC_OVER_44.5,Game Total,ARI @ LAC Over 44.5 Total,-147.0,1.6803,0.6546,3.0,,,,PENDING,0.0,NFL Week 1; Mega RLM ladder (+8.3% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_ARI_LAC_OVER_45.5,Game Total,ARI @ LAC Over 45.5 Total,-127.0,1.7874,0.6154,3.0,,,,PENDING,0.0,NFL Week 1; Mega RLM ladder (+9.1% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_GB_MIN_OVER_45.5,Game Total,GB @ MIN Over 45.5 Total,-108.0,1.9259,0.5712,2.0,,,,PENDING,0.0,NFL Sharp Money + RLM + Mega RLM 4+ (+13.8% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_SEA_ATH_UNDER_9.5,Game Total,SEA @ ATH Under 9.5 Total,-111.0,1.9009,0.5787,2.0,,,,PENDING,0.0,MLB Model Best Value Under (+7.4% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_LAA_WSH_UNDER_9.5,Game Total,LAA @ WSH Under 9.5 Total,-120.0,1.8333,0.6,1.99,,,,PENDING,0.0,MLB Model Best Value Under (+6.8% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_LAD_MIA_UNDER_8.5,Game Total,LAD @ MIA Under 8.5 Total,-111.0,1.9009,0.5787,2.0,,,,PENDING,0.0,MLB Model Best Value Under (+7.1% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_PHI_ATL_UNDER_9.5,Game Total,PHI @ ATL Under 9.5 Total,-120.0,1.8333,0.6,1.99,,,,PENDING,0.0,MLB Model Best Value Under (+6.5% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_BAL_IND_LAMAR_COMP_18.5_BOOST,Player Prop,Lamar Jackson Over 18.5 Pass Comp (50% Boost),150.0,2.5,0.44,5.0,,,,PENDING,0.0,NFL Sharp Prop; 50% Profit Boost applied
+2026-09-13T14:38:25+00:00,2026-09-13_BAL_IND_LAMAR_COMP_18.5,Player Prop,Lamar Jackson Over 18.5 Pass Comp,-104.0,1.9615,0.5608,2.5,,,,PENDING,0.0,NFL Sharp Prop ladder (+11.2% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_BAL_IND_LAMAR_COMP_17.5,Player Prop,Lamar Jackson Over 17.5 Pass Comp,-120.0,1.8333,0.6,5.0,,,,PENDING,0.0,NFL Highlighted Sharp Prop baseline (+14.6% EV)
+2026-09-13T14:38:25+00:00,2026-09-13_ARI_LAC_MHJ_REC_UNDER_3.5,Player Prop,Marvin Harrison Jr. Under 3.5 Receptions,113.0,2.13,0.5164,2.0,,,,PENDING,0.0,NFL Sharp Prop (+12.4% EV at plus-money)
+2026-09-13T14:38:25+00:00,2026-09-13_BAL_IND_JT_RUSH_ATT_UNDER_18.5,Player Prop,Jonathan Taylor Under 18.5 Rush Att.,-125.0,1.8,0.6111,4.0,,,,PENDING,0.0,NFL Sharp Prop vs BAL run front (+10.5% EV)

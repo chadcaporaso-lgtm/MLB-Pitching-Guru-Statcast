@@ -1,11 +1,11 @@
 timestamp,game_id,market_type,selection,placed_odds_american,placed_odds_decimal,model_win_prob,stake_units,closing_odds_american,closing_odds_decimal,clv_pct,result,profit_units,weather_desc
-2026-09-10T12:20:00+00:00,2026-09-10_HOU_PHI_NRFI,NRFI,HOU @ PHI Under 0.5 1st Inning (NRFI),100.0,2.0,0.5867,3.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +8.67%
-2026-09-10T12:20:00+00:00,2026-09-10_HOU_PHI_K_WHEELER_6.5,Strikeout Prop,Zack Wheeler Over 6.5 Ks,-117.0,1.8547,0.637,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +9.78%
-2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_NRFI,NRFI,TEX @ SEA Under 0.5 1st Inning (NRFI),-150.0,1.6667,0.6203,5.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +2.03%
-2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_5.5,Strikeout Prop,Jacob deGrom Over 5.5 Ks,-245.0,1.4082,0.849,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +13.89%
-2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_6.5,Strikeout Prop,Jacob deGrom Over 6.5 Ks,102.0,2.02,0.752,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +25.70%
-2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_7.5,Strikeout Prop,Jacob deGrom Over 7.5 Ks,156.0,2.56,0.636,1.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +24.54%
-2026-09-10T12:20:00+00:00,2026-09-10_COL_NYY_K_FRIED_5.5,Strikeout Prop,Max Fried Over 5.5 Ks,104.0,2.04,0.732,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +24.18%
-2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_NRFI,NRFI,PIT @ CWS Under 0.5 1st Inning (NRFI),-130.0,1.7692,0.5852,2.99,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +2.00%
-2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_5.5,Strikeout Prop,Jared Jones Over 5.5 Ks,-163.0,1.6135,0.822,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +20.22%
-2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_6.5,Strikeout Prop,Jared Jones Over 6.5 Ks,133.0,2.33,0.715,2.0,,,,PENDING,0.0,Logged from Pikkit; Model Edge: +28.58%
+2026-09-10T12:20:00+00:00,2026-09-10_HOU_PHI_NRFI,NRFI,HOU @ PHI Under 0.5 1st Inning (NRFI),100.0,2.0,0.5867,3.0,,1.9,5.26,WIN,3.0,Logged from Pikkit; Model Edge: +8.67%
+2026-09-10T12:20:00+00:00,2026-09-10_HOU_PHI_K_WHEELER_6.5,Strikeout Prop,Zack Wheeler Over 6.5 Ks,-117.0,1.8547,0.637,2.0,,1.75,5.98,WIN,1.709,Logged from Pikkit; Model Edge: +9.78%
+2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_NRFI,NRFI,TEX @ SEA Under 0.5 1st Inning (NRFI),-150.0,1.6667,0.6203,5.0,,1.58,5.49,WIN,3.333,Logged from Pikkit; Model Edge: +2.03%
+2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_5.5,Strikeout Prop,Jacob deGrom Over 5.5 Ks,-245.0,1.4082,0.849,2.0,,1.35,4.31,WIN,0.816,Logged from Pikkit; Model Edge: +13.89%
+2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_6.5,Strikeout Prop,Jacob deGrom Over 6.5 Ks,102.0,2.02,0.752,2.0,,1.88,7.45,WIN,2.04,Logged from Pikkit; Model Edge: +25.70%
+2026-09-10T12:20:00+00:00,2026-09-10_TEX_SEA_K_DEGROM_7.5,Strikeout Prop,Jacob deGrom Over 7.5 Ks,156.0,2.56,0.636,1.0,,2.35,8.94,WIN,1.56,Logged from Pikkit; Model Edge: +24.54%
+2026-09-10T12:20:00+00:00,2026-09-10_COL_NYY_K_FRIED_5.5,Strikeout Prop,Max Fried Over 5.5 Ks,104.0,2.04,0.732,2.0,,1.95,4.62,WIN,2.08,Logged from Pikkit; Model Edge: +24.18%
+2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_NRFI,NRFI,PIT @ CWS Under 0.5 1st Inning (NRFI),-130.0,1.7692,0.5852,2.99,,1.7,4.07,WIN,2.3,Logged from Pikkit; Model Edge: +2.00%
+2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_5.5,Strikeout Prop,Jared Jones Over 5.5 Ks,-163.0,1.6135,0.822,2.0,,1.53,5.46,WIN,1.227,Logged from Pikkit; Model Edge: +20.22%
+2026-09-10T12:20:00+00:00,2026-09-10_PIT_CWS_K_JONES_6.5,Strikeout Prop,Jared Jones Over 6.5 Ks,133.0,2.33,0.715,2.0,,2.15,8.37,WIN,2.66,Logged from Pikkit; Model Edge: +28.58%

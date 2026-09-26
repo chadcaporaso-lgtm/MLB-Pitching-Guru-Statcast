@@ -1,0 +1,11 @@
+# Credentials & Secrets
+.env
+api_credentials.json
+api_keys.json
+*.json.bak
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store

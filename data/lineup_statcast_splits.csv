@@ -1,0 +1,271 @@
+game_pk,team_id,team_name,batting_order,batter_id,batter_name,stand,opp_pitcher_hand,xwoba_vs_hand,k_pct_vs_hand,bb_pct_vs_hand,whiff_pct_vs_hand
+824226,142,Minnesota Twins,1,807712,Luke Keaschall,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,2,686797,Brooks Lee,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,3,665019,Kody Clemens,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,4,605137,Josh Bell,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,5,701785,Kaelen Culpepper,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,6,663616,Trevor Larnach,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,7,668904,Royce Lewis,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,8,605170,Victor Caratini,R,R,0.32,0.22,0.085,0.24
+824226,142,Minnesota Twins,9,805805,Walker Jenkins,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,1,805808,Kevin McGonigle,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,2,701678,Hao-Yu Lee,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,3,679529,Spencer Torkelson,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,4,682985,Riley Greene,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,5,693307,Dillon Dingler,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,6,814430,Brett Callahan,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,7,703601,Max Clark,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,8,701162,Ben Malgeri,R,R,0.32,0.22,0.085,0.24
+824226,116,Detroit Tigers,9,807726,John Peck,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,1,703520,Brett Bateman,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,2,660821,Jesús Sánchez,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,3,665489,Vladimir Guerrero Jr.,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,4,672386,Alejandro Kirk,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,5,672960,Kazuma Okamoto,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,6,665926,Andrés Giménez,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,7,676391,Ernie Clement,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,8,678218,Brandon Valenzuela,R,R,0.32,0.22,0.085,0.24
+824956,141,Toronto Blue Jays,9,669701,Josh Smith,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,1,703607,Henry Bolte,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,2,671732,Lawrence Butler,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,3,680869,Zack Gelof,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,4,672016,Denzel Clarke,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,5,695720,Tommy White,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,6,691777,Max Muncy,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,7,622268,Donovan Walton,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,8,661531,Brian Serven,R,R,0.32,0.22,0.085,0.24
+824956,133,Athletics,9,675961,Alika Williams,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,1,691023,Jordan Walker,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,2,671056,Iván Herrera,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,3,676475,Alec Burleson,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,4,699024,Leo Bernal,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,5,695491,Joshua Báez,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,6,687363,Victor Scott II,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,7,695336,Thomas Saggese,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,8,701675,Nathan Church,R,R,0.32,0.22,0.085,0.24
+823172,138,St. Louis Cardinals,9,665877,José Fermín,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,1,695391,Brett Harris,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,2,806367,Turner Hill,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,3,805811,Bryce Eldridge,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,4,813841,Jonah Cox,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,5,808982,Jung Hoo Lee,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,6,694376,Shay Whitcomb,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,7,701852,Drew Cavanaugh,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,8,687529,Grant McCray,R,R,0.32,0.22,0.085,0.24
+823172,137,San Francisco Giants,9,683766,Christian Koss,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,1,695578,James Wood,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,2,686611,Dylan Crews,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,3,665953,Andrés Chaparro,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,4,682928,CJ Abrams,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,5,677588,José Tena,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,6,695734,Daylen Lile,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,7,660688,Keibert Ruiz,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,8,691781,Brady House,R,R,0.32,0.22,0.085,0.24
+823251,120,Washington Nationals,9,696285,Jacob Young,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,1,665487,Fernando Tatis Jr.,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,2,593428,Xander Bogaerts,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,3,592518,Manny Machado,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,4,664034,Ty France,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,5,701538,Jackson Merrill,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,6,669134,Luis Campusano,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,7,806956,Ethan Salas,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,8,669392,Samad Taylor,R,R,0.32,0.22,0.085,0.24
+823251,135,San Diego Padres,9,687749,Jase Bowen,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,1,677649,Ezequiel Duran,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,2,608369,Corey Seager,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,3,679822,Justin Foscue,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,4,607043,Brandon Nimmo,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,5,694671,Wyatt Langford,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,6,695508,Cam Cauley,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,7,592626,Joc Pederson,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,8,670032,Nicky Lopez,R,R,0.32,0.22,0.085,0.24
+823090,140,Texas Rangers,9,694497,Evan Carter,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,1,641487,J.P. Crawford,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,2,668227,Randy Arozarena,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,3,686527,Dominic Canzone,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,4,663728,Cal Raleigh,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,5,677594,Julio Rodríguez,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,6,647304,Josh Naylor,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,7,645302,Victor Robles,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,8,702284,Cole Young,R,R,0.32,0.22,0.085,0.24
+823090,136,Seattle Mariners,9,801126,Brock Rodden,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,1,680757,Steven Kwan,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,2,800050,Chase DeLauter,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,3,608070,José Ramírez,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,4,666176,Jo Adell,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,5,683953,Travis Bazzana,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,6,663993,Nathaniel Lowe,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,7,694197,Angel Genao,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,8,672275,Patrick Bailey,R,R,0.32,0.22,0.085,0.24
+824791,114,Cleveland Guardians,9,677587,Brayan Rocchio,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,1,687637,Dylan Beavers,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,2,624413,Pete Alonso,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,3,691723,Coby Mayo,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,4,687952,Christian Encarnacion-Strand,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,5,702616,Jackson Holliday,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,6,677956,Rece Hinds,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,7,669236,Jeremiah Jackson,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,8,665750,Leody Taveras,R,R,0.32,0.22,0.085,0.24
+824791,110,Baltimore Orioles,9,665966,Carlos Narváez,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,1,665161,Jeremy Peña,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,2,670541,Yordan Alvarez,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,3,670623,Isaac Paredes,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,4,514888,Jose Altuve,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,5,673237,Yainer Diaz,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,6,572233,Christian Walker,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,7,662139,Daulton Varsho,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,8,701358,Cam Smith,R,R,0.32,0.22,0.085,0.24
+823416,117,Houston Astros,9,678489,Jorge Barrosa,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,1,656941,Kyle Schwarber,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,2,607208,Trea Turner,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,3,547180,Bryce Harper,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,4,650333,Luis Arraez,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,5,681082,Bryson Stott,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,6,669016,Brandon Marsh,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,7,702222,Justin Crawford,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,8,592663,J.T. Realmuto,R,R,0.32,0.22,0.085,0.24
+823416,143,Philadelphia Phillies,9,650559,Bryan De La Cruz,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,1,596019,Francisco Lindor,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,2,665742,Juan Soto,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,3,666182,Bo Bichette,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,4,701807,Carson Benge,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,5,676724,Jared Young,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,6,543760,Marcus Semien,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,7,805999,A.J. Ewing,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,8,683146,Brett Baty,R,R,0.32,0.22,0.085,0.24
+823818,121,New York Mets,9,620443,Luis Torrens,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,1,669065,Kyle Stowers,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,2,681715,Heriberto Hernández,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,3,665052,Griffin Conine,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,4,672640,Otto Lopez,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,5,805300,Jakob Marsee,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,6,691594,Javier Sanoja,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,7,683357,Owen Caissie,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,8,688363,Graham Pauley,R,R,0.32,0.22,0.085,0.24
+823818,146,Miami Marlins,9,691788,Joe Mack,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,1,687263,Zach Neto,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,2,545361,Mike Trout,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,3,642350,Jose Siri,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,4,687093,Vaughn Grissom,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,5,695681,Christian Moore,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,6,677347,Kyren Paris,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,7,672724,Oswald Peraza,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,8,694203,Denzer Guzman,R,R,0.32,0.22,0.085,0.24
+824713,108,Los Angeles Angels,9,623168,Tyler Heineman,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,1,701350,Roman Anthony,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,2,681508,Mickey Gasper,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,3,677800,Wilyer Abreu,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,4,596115,Trevor Story,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,5,686765,Nick Sogard,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,6,702332,Caleb Durbin,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,7,680776,Jarren Duran,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,8,643396,Isiah Kiner-Falefa,R,R,0.32,0.22,0.085,0.24
+824713,111,Boston Red Sox,9,681987,Nate Eaton,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,1,664983,Jake McCarthy,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,2,694249,Cole Carrigg,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,3,681198,TJ Rumfield,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,4,696100,Hunter Goodman,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,5,666160,Mickey Moniak,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,6,691720,Kyle Karros,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,7,664954,Brett Sullivan,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,8,681393,Connor Norby,R,R,0.32,0.22,0.085,0.24
+823497,115,Colorado Rockies,9,691728,Zac Veen,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,1,700250,Ben Rice,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,2,641355,Cody Bellinger,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,3,592450,Aaron Judge,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,4,671277,Luis García Jr.,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,5,682987,Spencer Jones,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,6,806146,George Lombard Jr.,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,7,641857,Ryan McMahon,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,8,669224,Austin Wells,R,R,0.32,0.22,0.085,0.24
+823497,147,New York Yankees,9,676609,José Caballero,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,1,650490,Yandy Díaz,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,2,666018,Jonathan Aranda,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,3,691406,Junior Caminero,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,4,689414,Liam Hicks,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,5,683748,Victor Mesa Jr.,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,6,802415,Chandler Simpson,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,7,656775,Cedric Mullins,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,8,680700,Richie Palacios,R,R,0.32,0.22,0.085,0.24
+824871,139,Tampa Bay Rays,9,622761,Jorge Mateo,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,1,686948,Drake Baldwin,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,2,660670,Ronald Acuña Jr.,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,3,621566,Matt Olson,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,4,671739,Michael Harris II,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,5,643289,Mauricio Dubón,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,6,573262,Mike Yastrzemski,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,7,645277,Ozzie Albies,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,8,663586,Austin Riley,R,R,0.32,0.22,0.085,0.24
+824871,144,Atlanta Braves,9,669221,Sean Murphy,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,1,545121,Ildemaro Vargas,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,2,606466,Ketel Marte,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,3,672695,Geraldo Perdomo,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,4,571448,Nolan Arenado,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,5,694374,Tim Tawa,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,6,666971,Lourdes Gurriel Jr.,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,7,543510,James McCann,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,8,691783,Jordan Lawlar,R,R,0.32,0.22,0.085,0.24
+824064,109,Arizona Diamondbacks,9,663457,Lars Nootbaar,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,1,695600,Carter Jensen,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,2,677951,Bobby Witt Jr.,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,3,686469,Vinnie Pasquantino,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,4,521692,Salvador Perez,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,5,686681,Michael Massey,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,6,679845,Nick Loftin,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,7,670231,John Rave,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,8,664728,Kyle Isbel,R,R,0.32,0.22,0.085,0.24
+824064,118,Kansas City Royals,9,686555,Isaac Collins,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,1,804606,Konnor Griffin,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,2,664040,Brandon Lowe,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,3,668804,Bryan Reynolds,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,4,693304,Nick Gonzales,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,5,665833,Oneil Cruz,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,6,699013,Esmerlyn Valdez,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,7,687462,Spencer Horwitz,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,8,804668,Rafael Flores Jr.,R,R,0.32,0.22,0.085,0.24
+824549,134,Pittsburgh Pirates,9,694378,Jacob Gonzalez,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,1,803011,Sam Antonacci,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,2,643217,Andrew Benintendi,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,3,808959,Munetaka Murakami,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,4,545341,Randal Grichuk,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,5,695657,Colson Montgomery,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,6,695731,Braden Montgomery,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,7,671976,Tristan Peters,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,8,805367,Chase Meidroth,R,R,0.32,0.22,0.085,0.24
+824549,145,Chicago White Sox,9,691019,Kyle Teel,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,1,691718,Pete Crow-Armstrong,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,2,673548,Seiya Suzuki,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,3,683737,Michael Busch,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,4,608324,Alex Bregman,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,5,664023,Ian Happ,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,6,663538,Nico Hoerner,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,7,699393,Pedro Ramírez,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,8,624424,Michael Conforto,R,R,0.32,0.22,0.085,0.24
+823739,112,Chicago Cubs,9,608348,Carson Kelly,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,1,694192,Jackson Chourio,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,2,668930,Brice Turang,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,3,661388,William Contreras,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,4,683734,Andrew Vaughn,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,5,592885,Christian Yelich,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,6,686217,Sal Frelick,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,7,687401,Joey Ortiz,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,8,669003,Garrett Mitchell,R,R,0.32,0.22,0.085,0.24
+823739,158,Milwaukee Brewers,9,806198,Cooper Pratt,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,1,699115,Carlos Jorge,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,2,682829,Elly De La Cruz,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,3,701398,Sal Stewart,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,4,668709,JJ Bleday,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,5,699302,Héctor Rodríguez,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,6,682877,Juan Brito,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,7,677943,Will Banfield,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,8,670770,TJ Friedl,R,R,0.32,0.22,0.085,0.24
+823900,113,Cincinnati Reds,9,663647,Ke'Bryan Hayes,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,1,669242,Tommy Edman,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,2,669257,Will Smith,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,3,605141,Mookie Betts,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,4,571970,Max Muncy,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,5,606192,Teoscar Hernández,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,6,663656,Kyle Tucker,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,7,676439,Hunter Feduccia,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,8,518692,Freddie Freeman,R,R,0.32,0.22,0.085,0.24
+823900,119,Los Angeles Dodgers,9,571771,Enrique Hernández,R,R,0.32,0.22,0.085,0.24

@@ -1,0 +1,26 @@
+team_id,team_name,pitches_day1_yesterday,pitches_day2,pitches_day3,weighted_pitch_load,high_leverage_pitches,closer_available,bullpen_fatigue_mult
+114,Cleveland Guardians,143,111,50,224.6,214,False,0.0798
+140,Texas Rangers,125,35,97,175.1,190,False,0.0551
+133,Athletics,91,114,43,172.3,188,False,0.0537
+141,Toronto Blue Jays,101,75,60,164.0,144,False,0.0495
+116,Detroit Tigers,122,0,121,158.3,113,False,0.0467
+138,St. Louis Cardinals,64,71,153,152.5,145,False,0.0438
+120,Washington Nationals,79,83,72,143.6,132,False,0.0393
+145,Chicago White Sox,88,85,0,143.2,141,False,0.0392
+118,Kansas City Royals,83,78,0,133.7,144,False,0.0344
+144,Atlanta Braves,45,71,119,132.8,111,False,0.0339
+139,Tampa Bay Rays,88,67,0,131.6,143,False,0.0333
+147,New York Yankees,67,88,0,124.2,126,False,0.0296
+113,Cincinnati Reds,77,69,0,121.8,124,False,0.0284
+137,San Francisco Giants,90,47,0,120.5,125,False,0.0278
+142,Minnesota Twins,86,49,0,117.8,123,False,0.0264
+110,Baltimore Orioles,76,57,0,113.0,119,False,0.024
+111,Boston Red Sox,57,80,0,109.0,117,False,0.022
+112,Chicago Cubs,61,64,0,102.6,110,False,0.0188
+121,New York Mets,71,39,0,96.4,98,True,0.0157
+119,Los Angeles Dodgers,50,60,0,89.0,92,True,0.012
+143,Philadelphia Phillies,42,55,0,77.8,81,True,0.0064
+135,San Diego Padres,38,44,0,66.6,68,True,0.0008
+146,Miami Marlins,31,40,0,57.0,55,True,0.0
+134,Pittsburgh Pirates,25,35,0,47.8,44,True,0.0
+108,Los Angeles Angels,20,30,0,39.5,35,True,0.0

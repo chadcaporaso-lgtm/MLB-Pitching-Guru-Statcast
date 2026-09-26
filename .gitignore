@@ -4,7 +4,7 @@ api_credentials.json
 api_keys.json
 *.json.bak
 
-# Python & Environment
+# System & Cache
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/

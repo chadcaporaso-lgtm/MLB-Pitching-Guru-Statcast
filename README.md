@@ -67,10 +67,20 @@ MLB-Pitching-Guru-Statcast/
 ## 4. Execution Workflow
 
 ```bash
-# Run live tracking &
- settlement
-python /content/drive/MyDrive/MLB-Guru-Data/scripts/live_slate_tracker.py
+# Install the scanner's dependencies in a local virtual environment
+python3 -m venv .venv
+.venv/bin/python -m pip install numpy pandas scipy requests
 
-# Sync to GitHub
-python /content/drive/MyDrive/MLB-Guru-Data/scripts/github_sync.py --message "Sync ledger"
+# Run all four models using the CSVs in data/ (no network or credentials)
+.venv/bin/python master_production_runner.py
+
+# Optionally scan live moneyline odds after refreshing the input CSVs
+ODDS_API_KEY=your_key .venv/bin/python master_production_runner.py --live
 ```
+
+Run from any directory; the default input directory is the repository's `data/` folder.
+Use `--data-dir PATH` to select another set of input CSVs. Offline mode previews
+the four projection boards but does not generate betting recommendations. Live mode prints
+qualifying moneyline opportunities; it does not modify the ledger. Keep the input
+slate current before comparing projections to live odds: the bundled CSVs are snapshots,
+not a live feed.

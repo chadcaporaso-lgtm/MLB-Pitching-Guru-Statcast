@@ -1,20 +1,17 @@
+import argparse
 import os
 import re
-import datetime
 import requests
 import numpy as np
 import pandas as pd
 from scipy.stats import nbinom
 
-ODDS_API_KEY = "34ea51232dfd5fd5830d0acf99583ab6"
 SPORT_KEY = "baseball_mlb"
 TARGET_BOOKS = {"fanduel", "draftkings", "williamhill_us", "betmgm", "bovada", "novig"}
 MIN_EDGE = 0.05
 MAX_EDGE = 0.25
 
-LOCAL_DATA = "/content/MLB-Pitching-Guru-Statcast/data"
-DRIVE_DATA = "/content/drive/MyDrive/MLB-Guru-Data/data"
-DATA_DIR = LOCAL_DATA if os.path.exists(LOCAL_DATA) else "."
+DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 MLB_TEAM_MAP = {
     "arizona diamondbacks": "ARI", "diamondbacks": "ARI",
@@ -340,15 +337,16 @@ def run_full_game_ensemble(df_pitchers, df_lineups, df_bullpen, df_nrfi):
         })
     return pd.DataFrame(ensemble_rows)
 
-def scan_live_market():
+def scan_live_market(data_dir=DATA_DIR, odds_api_key=None):
     print("=" * 85)
     print("EXECUTING MULTI-MODEL PRODUCTION SCANNER")
     print("=" * 85)
+    print(f"Input CSV directory: {os.path.abspath(data_dir)}")
 
-    df_pitchers = pd.read_csv(os.path.join(DATA_DIR, "pitcher_statcast_rolling.csv"))
-    df_lineups = pd.read_csv(os.path.join(DATA_DIR, "lineup_statcast_splits.csv"))
-    df_bullpen = pd.read_csv(os.path.join(DATA_DIR, "bullpen_leverage_index.csv"))
-    df_nrfi = pd.read_csv(os.path.join(DATA_DIR, "nrfi_context_splits.csv"))
+    df_pitchers = pd.read_csv(os.path.join(data_dir, "pitcher_statcast_rolling.csv"))
+    df_lineups = pd.read_csv(os.path.join(data_dir, "lineup_statcast_splits.csv"))
+    df_bullpen = pd.read_csv(os.path.join(data_dir, "bullpen_leverage_index.csv"))
+    df_nrfi = pd.read_csv(os.path.join(data_dir, "nrfi_context_splits.csv"))
 
     for c in ['xwoba_vs_hand', 'k_pct_vs_hand', 'bb_pct_vs_hand', 'whiff_pct_vs_hand']:
         df_lineups[c] = clean_numeric(df_lineups[c])
@@ -363,13 +361,24 @@ def scan_live_market():
 
     print(f"Executed 4 Models: K-Props ({len(df_k)}), NRFI ({len(df_nrfi_out)}), F5 ({len(df_f5)}), Full ({len(df_full)})")
 
+    if not odds_api_key:
+        for name, board in (("K-Props", df_k), ("NRFI", df_nrfi_out),
+                            ("F5", df_f5), ("Full Game", df_full)):
+            print(f"\n{name} projections:")
+            print(board.head(3).to_string(index=False) if not board.empty else "No matching games")
+        print("Offline projections complete; live odds and recommendations skipped.")
+        return []
+
     url = f"https://api.the-odds-api.com/v4/sports/{SPORT_KEY}/odds"
-    params = {"apiKey": ODDS_API_KEY, "regions": "us", "markets": "h2h,spreads", "oddsFormat": "decimal"}
+    params = {"apiKey": odds_api_key, "regions": "us", "markets": "h2h,spreads", "oddsFormat": "decimal"}
     try:
         res = requests.get(url, params=params, timeout=12)
-        odds_events = res.json() if res.status_code == 200 else []
-    except Exception:
-        odds_events = []
+        res.raise_for_status()
+        odds_events = res.json()
+    except (requests.RequestException, ValueError) as exc:
+        raise RuntimeError("Could not retrieve live odds; no recommendations generated") from exc
+    if not isinstance(odds_events, list):
+        raise RuntimeError("Odds API returned an unexpected response; no recommendations generated")
     print(f"Retrieved {len(odds_events)} live game trees from The Odds API.")
 
     qualifying_bets = []
@@ -394,7 +403,7 @@ def scan_live_market():
                     for outcome in mkt.get("outcomes", []):
                         pick_abbr = get_team_abbr(outcome.get("name"))
                         dec_odds = float(outcome.get("price", 1.0))
-                        if not pick_abbr or dec_odds <= 1.0: continue
+                        if pick_abbr not in (home_abbr, away_abbr) or dec_odds <= 1.0: continue
 
                         implied_p = 1.0 / dec_odds
                         is_home = (pick_abbr == home_abbr)
@@ -406,4 +415,32 @@ def scan_live_market():
                             raw_kelly = (model_p * b - (1.0 - model_p)) / b
                             stake = min(2.00, max(0.75, round(raw_kelly * 0.25 * 10.0, 2)))
                             qualifying_bets.append({
-                                "composite_key": str(datetime.date.today()) + "_"
+                                "matchup": game["matchup"],
+                                "selection": outcome["name"],
+                                "book": book_key,
+                                "decimal_odds": dec_odds,
+                                "model_prob": model_p,
+                                "edge": round(edge, 4),
+                                "stake_units": stake,
+                            })
+
+    print(f"Qualifying moneyline opportunities: {len(qualifying_bets)}")
+    for bet in qualifying_bets:
+        print(f"{bet['matchup']} | {bet['selection']} | {bet['book']} | "
+              f"{bet['decimal_odds']:.2f} | edge {bet['edge']:.1%} | "
+              f"stake {bet['stake_units']:.2f} units")
+    return qualifying_bets
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run the four MLB projection models and optionally scan live moneylines")
+    parser.add_argument("--data-dir", default=DATA_DIR, help="directory containing the four input CSVs")
+    parser.add_argument("--live", action="store_true", help="fetch live odds (requires ODDS_API_KEY)")
+    args = parser.parse_args()
+    api_key = os.environ.get("ODDS_API_KEY") if args.live else None
+    if args.live and not api_key:
+        parser.error("--live requires ODDS_API_KEY in the environment")
+    try:
+        scan_live_market(args.data_dir, api_key)
+    except (FileNotFoundError, KeyError, RuntimeError) as exc:
+        parser.exit(1, f"Scanner error: {exc}\n")

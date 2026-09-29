@@ -3,7 +3,7 @@ import json
 import subprocess
 
 def load_config():
-    keys_path = "/content/drive/MyDrive/MLB-Guru-Data/api_keys.json"
+    keys_path = "/content/drive/MyDrive/MLB-Playoffs-Data/api_keys.json"
     with open(keys_path, "r") as f:
         data = json.load(f)
     return data["GITHUB_USERNAME"], data["GITHUB_TOKEN"], data["GITHUB_REPO"]

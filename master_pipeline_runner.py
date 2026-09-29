@@ -26,7 +26,7 @@ API_KEY = "c49022bdc56731df0a5cba336b0cc880"
 SGO_URL = "https://api.sportsgameodds.com/v2/events"
 TARGET_BOOKS = ["novig", "fanduel", "caesars", "draftkings", "betmgm"]
 DATA_DIR = "data"
-DRIVE_DIR = "/content/drive/MyDrive/MLB-Guru-Data"
+DRIVE_DIR = "/content/drive/MyDrive/MLB-Playoffs-Data"
 TODAY_STR = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 print("=" * 85)

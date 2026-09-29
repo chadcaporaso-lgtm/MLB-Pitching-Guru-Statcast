@@ -1,32 +1,51 @@
 import numpy as np
-import pandas as pd
 
-def to_american(prob):
-    if prob >= 0.99: return "-10000"
-    if prob <= 0.01: return "+10000"
-    if prob >= 0.5: return f"-{int(round(100.0 * (prob / (1.0 - prob))))}"
-    return f"+{int(round(100.0 * ((1.0 - prob) / prob)))}"
+def simulate_postseason_half_inning_nrfi(
+    starter_whiff_rate: float,
+    starter_bb_rate: float,
+    top3_obp: float,
+    top3_iso: float,
+    umpire_zone_factor: float = 0.985,  # Tighter horizontal zone in postseason
+    max_effort_boost: float = 0.020      # Max intent in 1st inning
+) -> float:
+    """
+    Computes single-team half-inning zero-run probability using calibrated
+    1st-inning postseason transition rates.
+    """
+    # 1. Calibrate 1st Inning Whiff and Walk Probabilities
+    effective_whiff = (starter_whiff_rate + max_effort_boost) * umpire_zone_factor
+    effective_bb = starter_bb_rate / umpire_zone_factor
+    
+    # 2. Base-Out Transition Probabilities for First 3-4 Batters
+    p_k = effective_whiff * 0.88
+    p_bb = effective_bb
+    p_batted_ball = max(0.05, 1.0 - (p_k + p_bb))
+    
+    # 3. Hit / Out distribution on contact against elite top-of-order bats
+    p_hit = p_batted_ball * (top3_obp - effective_bb) / max(0.01, 1.0 - effective_bb)
+    p_extra_base = p_hit * (top3_iso / max(0.01, top3_obp))
+    p_single = max(0.0, p_hit - p_extra_base)
+    p_field_out = max(0.0, p_batted_ball - p_hit)
+    
+    # Transition: Probability of 3 outs recorded before 1 run scores
+    # Analytical Markov absorption approximation for half-inning:
+    p_clean_3up_3down = (p_k + p_field_out) ** 3
+    p_1runner_0runs = 3.0 * (p_single + p_bb) * ((p_k + p_field_out) ** 3) * 0.72
+    p_2runners_0runs = 3.0 * ((p_single + p_bb) ** 2) * ((p_k + p_field_out) ** 3) * 0.28
+    
+    half_inning_zero_runs = p_clean_3up_3down + p_1runner_0runs + p_2runners_0runs
+    return min(0.92, max(0.48, float(half_inning_zero_runs)))
 
-def run_markov_nrfi_engine(df_pitchers, df_lineups, df_nrfi):
-    nrfi_res = []
-    for _, row in df_nrfi.iterrows():
-        sp_h = df_pitchers[df_pitchers['pitcher_name'] == row['home_pitcher']]
-        sp_a = df_pitchers[df_pitchers['pitcher_name'] == row['away_pitcher']]
-        if sp_h.empty or sp_a.empty: continue
-
-        tto1_k_h = float(sp_h.iloc[0]['tto1_k_pct']) if pd.notna(sp_h.iloc[0]['tto1_k_pct']) else 0.225
-        tto1_xw_h = float(sp_h.iloc[0]['tto1_xwoba']) if pd.notna(sp_h.iloc[0]['tto1_xwoba']) else 0.315
-        tto1_k_a = float(sp_a.iloc[0]['tto1_k_pct']) if pd.notna(sp_a.iloc[0]['tto1_k_pct']) else 0.225
-        tto1_xw_a = float(sp_a.iloc[0]['tto1_xwoba']) if pd.notna(sp_a.iloc[0]['tto1_xwoba']) else 0.315
-
-        p_top = min(0.92, max(0.60, 0.73 + (tto1_k_h - 0.22) * 0.4 - (tto1_xw_h - 0.315) * 0.6))
-        p_bot = min(0.92, max(0.60, 0.73 + (tto1_k_a - 0.22) * 0.4 - (tto1_xw_a - 0.315) * 0.6))
-        p_nrfi = p_top * p_bot
-
-        nrfi_res.append({
-            'game_pk': str(row['game_pk']),
-            'matchup': f"{row['away_team']} @ {row['home_team']}",
-            'nrfi_prob': round(p_nrfi, 4), 'yrfi_prob': round(1.0 - p_nrfi, 4),
-            'fair_nrfi': to_american(p_nrfi), 'fair_yrfi': to_american(1.0 - p_nrfi)
-        })
-    return pd.DataFrame(nrfi_res)
+def calculate_postseason_nrfi(away_half_prob: float, home_half_prob: float) -> dict:
+    nrfi_prob = away_half_prob * home_half_prob
+    yrfi_prob = 1.0 - nrfi_prob
+    
+    fair_nrfi_american = int(round(-100.0 / (1.0 - nrfi_prob))) if nrfi_prob > 0.5 else int(round((1.0 - nrfi_prob) / nrfi_prob * 100.0))
+    fair_yrfi_american = int(round(-100.0 / (1.0 - yrfi_prob))) if yrfi_prob > 0.5 else int(round((1.0 - yrfi_prob) / yrfi_prob * 100.0))
+    
+    return {
+        'nrfi_prob': round(nrfi_prob, 4),
+        'yrfi_prob': round(yrfi_prob, 4),
+        'fair_nrfi_american': fair_nrfi_american,
+        'fair_yrfi_american': fair_yrfi_american
+    }
